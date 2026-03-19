@@ -1,19 +1,30 @@
-<!doctype html>
-<html lang="fr-FR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>1ère scène de threeJS</title>
-        <meta
-            name="description"
-            content="Phrase descriptive d\’environ 160 caractères"
-        />
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    </head>
-    <body>
-        <canvas class="webgl"></canvas>
-        <script type="module" src="./main.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evidence Room - Escape Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- UI Overlay -->
+    <div id="ui-container">
+        <div id="timer">05:00</div>
+        <div id="counter">Preuves: <span id="evidence-count">0</span>/5</div>
+    </div>
+    
+    <!-- Instructions -->
+    <div id="instructions">
+        <p>🖱️ Double-clique sur le sol pour vous déplacer</p>
+        <p>🔦 Déplacez la souris pour éclairer</p>
+        <p>👆 Cliquez sur un objet brillant pour le capturer</p>
+    </div>
+
+    <!-- Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
